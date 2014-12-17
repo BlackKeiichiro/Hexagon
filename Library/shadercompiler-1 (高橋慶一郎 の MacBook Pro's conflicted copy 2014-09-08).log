@@ -1,0 +1,32 @@
+Base path: /Applications/Unity/Unity.app/Contents
+Pipe name: \\.\pipe\UnityShaderCompiler-1--1595616856
+Cmd: getPlatforms
+Cmd: preprocess
+  insize=1095 outsize=1001 ok=1
+Cmd: preprocess
+  error: 2 plat 12 at (35): Can't find include file CharaSkin.cg
+  insize=766 outsize=709 ok=0
+Cmd: preprocess
+  insize=1107 outsize=1013 ok=1
+Cmd: preprocess
+  insize=480 outsize=140 ok=1
+Cmd: preprocess
+  insize=755 outsize=698 ok=1
+Cmd: preprocess
+  insize=258 outsize=258 ok=1
+Cmd: preprocess
+  insize=757 outsize=700 ok=1
+Cmd: preprocess
+  insize=651 outsize=384 ok=1
+Cmd: preprocess
+  insize=1113 outsize=1019 ok=1
+Cmd: preprocess
+  insize=662 outsize=1282 ok=1
+Cmd: preprocess
+  insize=662 outsize=605 ok=1
+Cmd: preprocess
+  insize=870 outsize=777 ok=1
+Cmd: preprocess
+  insize=769 outsize=712 ok=1
+Cmd: preprocess
+  insize=1093 outsize=999 ok=1
