@@ -16,7 +16,9 @@ public class Manager : MonoBehaviour {
 	public AudioSource audios;
 	// Use this for initialization
 	void Start () {
-		//obj =  transform.Find("Buttun").gameObject;
+		GameObject canvas = GameObject.Find("Canvas") as GameObject;
+		obj =  canvas.transform.FindChild("Button").gameObject;
+		end =  canvas.transform.FindChild("Button1").gameObject;
 	}
 	
 	// Update is called once per frame

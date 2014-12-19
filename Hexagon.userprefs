@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\AudioData.cs">
+    <Files>
+      <File FileName="Assets\Script\GUIScoreTime.cs" Line="24" Column="1" />
+      <File FileName="Assets\Script\CreateHexagon.cs" Line="15" Column="1" />
+      <File FileName="Assets\Script\Fourier1.cs" Line="80" Column="25" />
+      <File FileName="Assets\Script\AudioData.cs" Line="6" Column="22" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

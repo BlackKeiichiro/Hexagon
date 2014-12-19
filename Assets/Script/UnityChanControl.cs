@@ -21,7 +21,7 @@ public class UnityChanControl : MonoBehaviour
 	bool useCurves = true;
 	Vector3 center,pos,r,direction;
 	Manager mnj;
-	public float animSpeed = 1.5f;				// アニメーション再生速度設定
+	public float animSpeed = 1.5f;// アニメーション再生速度設定
 
 	// キャラクターコントローラ（カプセルコライダ）の参照
 	private CapsuleCollider col;
@@ -32,7 +32,7 @@ public class UnityChanControl : MonoBehaviour
 	private float orgColHight;
 	private Vector3 orgVectColCenter;
 	
-	private Animator anim;							// キャラにアタッチされるアニメーターへの参照
+	private Animator anim;// キャラにアタッチされるアニメーターへの参照
 
 	// 初期化
 	void Start ()
@@ -49,7 +49,8 @@ public class UnityChanControl : MonoBehaviour
 	// 以下、メイン処理.リジッドボディと絡めるので、FixedUpdate内で処理を行う.
 	void FixedUpdate ()
 	{
-		if (mnj.flag) {
+		if (mnj.flag) 
+		{
 			anim.speed = animSpeed;								// Animatorのモーション再生速度に animSpeedを設定する
 			center = new Vector3 (0.0f, -37.0f, 0.0f);
 			r = Vector3.right * rds;
@@ -78,8 +79,7 @@ public class UnityChanControl : MonoBehaviour
 					}
 					pos = Quaternion.AngleAxis (angle, direction) * r;
 					cube.transform.position = pos + center;
-			} else 
-			{
+			} else {
 				anim.SetBool ("run_flag", false);
 			}
 			if (useCurves)
@@ -91,11 +91,12 @@ public class UnityChanControl : MonoBehaviour
 
 	void OnTriggerEnter(Collider col) 
 	{
-		if(col.gameObject.tag == "Hexagon"/* && mnj.flag*/)
+		if(col.gameObject.tag == "Hexagon")
 		{
 			mnj.flag = false;
 			anim.SetBool("run_flag",false);
-			//Application.LoadLevel("GameOver");
+			AudioSource audio = GameObject.Find("BlackOut").GetComponent<AudioSource>();
+			audio.Pause();
 		}
 	}
 
@@ -105,5 +106,4 @@ public class UnityChanControl : MonoBehaviour
 		col.height = orgColHight;
 		col.center = orgVectColCenter;
 	}
-
 }
