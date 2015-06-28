@@ -1,4 +1,4 @@
 Hexagon
 =======
 
-processssss
+superhexagonをコピーゲームしてみた。
